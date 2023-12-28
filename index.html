@@ -1,0 +1,61 @@
+<!-- basic html document -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- link for bootstrap@v5 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- header with title "Newsletter Signup form"-->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Newsletter Signup form</h1>
+        </div>
+      </div>
+
+      <!-- form with input for name, input for email, select tag for select your primary news interest with the following options. I'm giving some options here, sport, politics, entertainment, technology, and health.  -->
+      <div class="container">
+        <form>
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Nome:</label>
+              <input type="text" class="form-control" id="name" name="name" />
+            </div>
+            <div class="col-md-6">
+              <label for="email" class="form-label">Email:</label>
+              <input type="text" class="form-control" id="email" name="email" />
+            </div>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="col-md-12">
+              <label for="newsInterest" class="form-label"
+                >Interesse principale nelle notizie:</label
+              >
+              <select id="newsInterest" class="form-select" name="newsInterest">
+                <option selected value="">Choose...</option>
+                <option value="sport">Sport</option>
+                <option value="politics">Politica</option>
+                <option value="entertainment">Intrattenimento</option>
+                <option value="technology">Tecnologia</option>
+                <option value="health">Salute</option>
+              </select>
+            </div>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="col-md-12">
+              <button type="submit" class="btn btn-primary" id="submit">
+                Invia
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- import script index.js -->
+    <script src="index.js"></script>
+  </body>
+</html>
